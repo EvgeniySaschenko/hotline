@@ -1,0 +1,70 @@
+- var styleBase= "max-width: 730px; width: 100%; font: 16px Arial, sans-serif; text-align: center;";
+- var styleTitle= "font-size: 45px; color: #2873b4; padding-top: 25px; padding-bottom: 25px;";
+// Product
+- var styleProductTitle= "font-size: 30px; color: #243f5d; padding-bottom: 25px;";
+- var styleProductImg= "max-width: 100%;";
+- var styleProductText= "padding-bottom: 50px; color: #6a7378; border-bottom: 1px solid #d0d0d0; line-height: 2;";
+
+// Other Product
+- var styleOtherProductTitle= "padding-bottom: 20px; color: #7e6e57; font-size: 18px;";
+- var styleOtheProductImg= "padding-bottom: 10px; width: 50px; height: 50px;";
+- var styleOtheProductText= "padding-bottom: 20px; color: #8b8a88; padding-left: 10px; padding-right: 10px; line-height: 1.5;";
+- var styleOtheProductLink= "color: #79c6fe; text-decoration: none; font: 16px Arial, sans-serif;";
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+html
+	head
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		title Hotline - mail
+		style(type="text/css").
+			@media (max-width:520px) {
+			.table-product,
+			.table-product tr,
+			.table-product td {
+					display: block;
+					width: 100% !important;
+				}
+			}
+			
+	body
+		table(style=styleBase border="0" cellpadding="0" cellspacing="0")
+			tr
+				td(width="10%")
+				td(width="80%")
+					table(style="width: 100%;" border="0" cellpadding="0" cellspacing="0")
+						tr
+							td(style=styleTitle) Simples
+						tr
+							td(style="padding-bottom: 50px;")
+								img(src="https://ua-ix.biz/img/hotline/notebook.jpg" style=styleProductImg alt="Notebook")
+						tr
+							td(style=styleProductTitle) You Awesome Heading
+						tr
+							td(style=styleProductText) Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat laudantium inventore id eos ipsum eius assumenda ducimus necessitatibus voluptatibus fuga a suscipit ipsam sit, temporibus veritatis soluta debitis quidem nostrum nihil
+						tr
+							td(style="padding-top: 30px;")
+								table(style="width: 100%;" border="0" cellpadding="0" cellspacing="0" class="table-product")
+									tr
+										td(width="33.33%")
+											img(src="https://ua-ix.biz/img/hotline/icon-chrome.jpg" style=styleOtheProductImg alt="product")
+											div(style=styleOtheProductTitle) Heading
+											div(style=styleOtheProductText) Lorem, ipsum dolor sit amet consectetur
+											A(href="#" style=styleOtheProductLink) Read More
+
+										td(width="33.33%")
+											img(src="https://ua-ix.biz/img/hotline/icon-chrome.jpg" style=styleOtheProductImg alt="product")
+											div(style=styleOtheProductTitle) Heading
+											div(style=styleOtheProductText) Lorem, ipsum dolor sit amet consectetur
+											A(href="#" style=styleOtheProductLink) Read More
+
+										td(width="33.33%")
+											img(src="https://ua-ix.biz/img/hotline/icon-chrome.jpg" style=styleOtheProductImg alt="product")
+											div(style=styleOtheProductTitle) Heading
+											div(style=styleOtheProductText) Lorem, ipsum dolor sit amet consectetur
+											A(href="#" style=styleOtheProductLink) Read More
+
+						tr
+							td(style="padding-top: 50px; border-bottom: 1px solid #d0d0d0;")
+				td(width="10%")

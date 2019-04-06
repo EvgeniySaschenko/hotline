@@ -1,0 +1,69 @@
+/* Roboto */
+@font-face
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 400
+	src: url(../fonts/Roboto/Roboto-Regular.woff)
+	font-display: swap
+
+@font-face
+	font-family: 'Roboto'
+	font-style: italic
+	font-weight: 400
+	src: url(../fonts/Roboto/Roboto-Italic.woff)
+	font-display: swap
+
+@font-face
+	font-family: 'Roboto'
+	font-style: normal
+	font-weight: 700
+	src: url(../fonts/Roboto/Roboto-Bold.woff)
+	font-display: swap
+
+*
+	box-sizing: border-box
+
+img
+	max-width: 100%
+	height: auto
+
+body
+	color: #000000
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	font-weight: 400
+	line-height: 1
+	overflow-x: hidden
+
+a
+	text-decoration: none
+	&:hover
+		transition-duration: .3s
+
+button,
+input[type="submit"]
+	border: none
+	outline: none
+	font: inherit
+	&:active, 
+	&:hover, 
+	&:focus
+		outline: 0
+		outline-offset: 0
+
+
+button,
+input[type="submit"]
+	cursor: pointer
+
+.wrapper
+	margin: 0 auto
+	position: relative
+
+.container
+	max-width: 1024px
+	width: 100%
+	margin: 0 auto
+	box-sizing: border-box
+	@media #{$tablet}
+		padding: 0 10px

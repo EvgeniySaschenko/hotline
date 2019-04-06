@@ -1,0 +1,67 @@
+.registration
+	&__row
+		margin-bottom: 30px
+		display: flex
+		flex-wrap: wrap
+		@media #{$phone}
+			margin-bottom: 0
+		&_btn-next-back
+			justify-content: space-between
+			background-color: $gray-light
+			padding: 20px 10px
+	&__col
+		&-1
+			flex: 1
+			@media #{$phone}
+				flex: none
+				width: 100%
+		&-3
+			flex: .333
+			@media #{$phone}
+				flex: none
+				width: 100%
+	&__title-section
+		width: 100%
+		color: $gray-dark
+		display: flex
+		align-items: center
+		font-style: italic
+		&::after
+			margin-left: 10px
+			content: ""
+			flex: 1
+			border-bottom: 1px solid $gray-dark
+	&__name
+		font-weight: 700
+		padding: 5px 0
+		display: block
+		font-size: 12px
+		@media #{$phone}
+			padding: 10px 0 5px
+	&__field,
+	&__select
+		&_regular
+			width: 180px
+			@media #{$phone}
+				width: 100%
+		&_max-width
+			width: 100%
+	&__radio
+		display: none
+		&:checked + .registration__radio-btn
+			background-color: $green-light
+			color: #ffffff
+			border-bottom: 0
+			padding: 3px 6px
+			margin: 0
+			border-radius: 5px
+			@media #{$phone}
+				margin-bottom: 15px
+		&-btn
+			display: inline-block
+			margin: 0 6px
+			padding: 3px 0
+			cursor: pointer
+			font-size: 12px
+			color: #000000
+			border-bottom: 1px dotted #000000

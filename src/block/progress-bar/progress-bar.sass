@@ -1,0 +1,46 @@
+.progress-bar
+	display: flex
+	align-items: center
+	width: 100%
+	@media #{$tablet}
+		flex-direction: column
+	@media #{$phone}
+		margin-bottom: 15px
+	&__title
+		font-size: 25px
+		margin-right: 20px
+		white-space: nowrap
+		@media #{$tablet}
+			margin-bottom: 10px
+	&__list
+		display: flex
+		justify-content: space-between
+		width: 100%
+		height: 18px
+		&-item
+			display: flex
+			justify-content: center
+			align-items: center
+			flex: 1
+			color: $gray-dark
+			font-size: 12px
+			border-top: 1px solid rgba($gray-dark, .8)
+			margin-right: 2px
+			background-color: $gray-light
+			&:first-child
+				border-radius: 5px 0 0 5px
+			&:last-child
+				border-radius: 0 5px 5px 0
+				margin-right: 2px
+			&.active
+				color: #ffffff
+			&_1.active
+				background-color: $green-dark
+			&_2.active
+				background-color: rgba($green-dark, .8)
+			&_3.active
+				background-color: rgba($green-dark, .6)
+			&_4.active
+				background-color: rgba($green-dark, .4)
+			&_5.active
+				background-color: rgba($green-dark, .2)

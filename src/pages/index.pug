@@ -1,0 +1,165 @@
+extends ../layout/root
+block title 
+	title Doc title
+block meta_k 
+	meta(name="keywords" content="meta_k .........text")
+block meta_d 
+	meta(name="description" content="meta_d ......text")
+
+block main
+		+b.content
+			.container
+				+e.row
+					+e.col_sidebar
+						+b.BUTTON.btn_sidebar-left(id="btn_sidebar-left" data-id-control="sidebar_left") Каталог товаров
+						+b.ASIDE(id="sidebar_left").sidebar_left 
+							+b.BUTTON.btn_sidebar-left-close(id="btn_sidebar-left-close" data-id-control="sidebar_left") ×
+							+b.UL.filters-list 
+								+e.LI.item
+									+e.A(href="#").item-link Категория 1
+								+e.LI.item
+									+e.A(href="#").item-link Категория 2
+								+e.LI.item
+									+e.A(href="#").item-link Категория 3
+								+e.LI.item
+									+e.A(href="#").item-link Категория 4
+								+e.LI.item
+									+e.A(href="#").item-link Категория 5
+								+e.LI.item
+									+e.A(href="#").item-link Категория 6
+								+e.LI.item
+									+e.A(href="#").item-link Категория 7
+								+e.LI.item
+									+e.A(href="#").item-link Категория 8
+								+e.LI.item
+									+e.A(href="#").item-link Категория 9
+								+e.LI.item
+									+e.A(href="#").item-link Категория 10
+								+e.LI.item
+									+e.A(href="#").item-link Категория 11
+								+e.LI.item
+									+e.A(href="#").item-link Категория 12
+								+e.LI.item
+									+e.A(href="#").item-link Категория 13
+								+e.LI.item
+									+e.A(href="#").item-link Категория 14
+								+e.LI.item
+									+e.A(href="#").item-link Категория 15
+								+e.LI.item
+									+e.A(href="#").item-link Категория 16
+								+e.LI.item
+									+e.A(href="#").item-link Категория 17
+								+e.LI.item
+									+e.A(href="#").item-link Категория 18
+								+e.LI.item
+									+e.A(href="#").item-link Категория 19
+								+e.LI.item
+									+e.A(href="#").item-link Категория 20
+								+e.LI.item
+									+e.A(href="#").item-link Категория 21
+								+e.LI.item
+									+e.A(href="#").item-link Категория 22
+								+e.LI.item
+									+e.A(href="#").item-link Категория 23
+								+e.LI.item
+									+e.A(href="#").item-link Категория 24
+								+e.LI.item
+									+e.A(href="#").item-link Категория 25
+
+					+e.col_main
+						+b.MAIN.main
+							+b.FORM(action="/" id="registration").registration
+								+e.row
+									+b.progress-bar
+										+e.H3.title Заполните форму
+										+e.list
+											+e.list-item_1.active 1
+											+e.list-item_2.active 2
+											+e.list-item_3.active 3
+											+e.list-item_4 4
+											+e.list-item_5 5
+
+								+e.row
+									+e.H3.title-section Общая информация
+								+e.row
+									+e.col-1
+										+e.LABEL(for="field-last-name").name Фамилия
+										+e.INPUT(id="field-last-name" name="last-name" placeholder="Фамилия").field_regular
+									+e.col-1
+										+e.LABEL(for="field-name").name Имя
+										+e.INPUT(id="field-name" name="name" placeholder="Имя").field_regular
+									+e.col-1
+										+e.LABEL(for="field-patronymic").name Отчество
+										+e.INPUT(id="field-patronymic" name="patronymic" placeholder="Отчество").field_max-width Отчество
+
+								+e.row
+									+e.col-1
+										+e.name Меняли фамилию?
+
+										+e.INPUT(id="radio-change-lastname_yes" name="change-lastname" type="radio" value="1").radio
+										+e.LABEL(for="radio-change-lastname_yes").radio-btn Да
+
+										+e.INPUT(id="radio-change-lastname_no" name="change-lastname" type="radio" value="0" checked).radio
+										+e.LABEL(for="radio-change-lastname_no").radio-btn Нет
+
+									+e.col-1
+										+e.name Пол
+							
+										+e.INPUT(id="radio-btn-sex_yes" name="sex" type="radio" value="1" checked).radio
+										+e.LABEL(for="radio-btn-sex_yes").radio-btn Муж
+
+										+e.INPUT(id="radio-btn-sex_no" name="sex" type="radio" value="0").radio
+										+e.LABEL(for="radio-btn-sex_no").radio-btn Жен
+
+									+e.col-1
+										+e.name Семейное положение
+
+										+e.SELECT(name="family-status").select_max-width
+											+e.OPTION(value="1").option Женат/замужем
+											+e.OPTION(value="2").option Не женат/не замужем
+											+e.OPTION(value="3").option В разводе
+
+								+e.row
+									+e.col-3
+										+e.name Гражданство
+										+e.SELECT(name="nationality").select_regular
+											+e.OPTION(value="1").option Украина
+											+e.OPTION(value="2").option Другая страна
+											+e.OPTION(value="3").option Двойное
+
+									+e.col-3
+										+e.name Дата рождения
+										+e.SELECT(name="birth-day").select
+											+e.OPTION(value="1").option 1
+											+e.OPTION(value="2").option 2
+											+e.OPTION(value="3").option 3
+
+										+e.SELECT(name="birth-month").select
+											+e.OPTION(value="1").option 1
+											+e.OPTION(value="2").option 2
+											+e.OPTION(value="3").option 3
+
+										+e.SELECT(name="birth-year").select
+											+e.OPTION(value="1990").option 1990
+											+e.OPTION(value="2000").option 2000
+											+e.OPTION(value="2010").option 2010
+
+								+e.row
+									+e.col-1
+										+e.LABEL(for="field-place-birth").name Место рождения
+										+e.INPUT(id="field-place-birth" name="place-birth" placeholder="Место рождения").field_max-width
+
+								+e.row_btn-next-back
+									+b.BUTTON.btn.disabled ← Назад
+									+b.A(href="#" id="btn_next-registration").btn.regular Далее →
+
+
+		.container
+			div
+				+b.A(href="#").btn.regular.small Далее →
+				+b.btn.regular.normal Далее →
+				+b.INPUT(type="submit").btn.regular.big Далее →
+			div
+				+b.A(href="#").btn.regular.style-square.big Далее →
+				+b.btn.regular.style-round.normal Далее →
+				+b.INPUT(type="submit").btn.regular.style-soft.small Далее →
