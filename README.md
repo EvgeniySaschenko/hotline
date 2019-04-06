@@ -9,7 +9,7 @@
 * **npm start** - запуск проэкта для разработки
 * **адрес** - localhost:4000
 
-* Что использовалось: 
-* Функционал: 
-* Работа: 
-* Ссылка на сайт: 
+* Что использовалось: SASS, PUG, GULP, BEM, JS
+* Функционал: адаптив
+* Работа: вёрстка сайта + письмо
+* Ссылка на сайт: https://evgeniysaschenko.github.io/hotline/  https://evgeniysaschenko.github.io/hotline/mail.html
